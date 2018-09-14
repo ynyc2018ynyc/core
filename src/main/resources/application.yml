@@ -1,0 +1,24 @@
+
+spring:
+  freemarker:
+    #    allow-request-override: false
+    #    cache: true
+    #    check-template-location: true
+    #    expose-request-attributes: false
+    #    expose-session-attributes: false
+    #    expose-spring-macro-helpers: false
+    #    prefix:
+    charset: utf-8
+    content-type: text/html
+    suffix: .ftl
+    template-loader-path: classpath:/templates/
+  datasource:
+    url: jdbc:mysql://localhost:3306/portal?useUnicode=true&characterEncoding=utf-8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: true
+server:
+  port: 80
